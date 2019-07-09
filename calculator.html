@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script type="text/javascript" src="jsfile.js"></script>
+    <meta charset="UTF-8" />
+    <title>Calculator</title>
+</head>
+<body onload="myFunction0()">
+
+<div class="container">
+    <p>
+        This component works exactly like the calculator you know. Click any number to start calculating!
+    </p>
+    <div class="calculator">
+        <div class="calculator__display"><span id="myText"></span></div>
+
+        <div class="calculator__keys">
+            <button class="key--operator" onclick="myFunctionAdd()">+</button>
+            <button class="key--operator" onclick="myFunctionSub()">-</button>
+            <button class="key--operator" onclick="myFunctionMul()">&times;</button>
+            <button class="key--operator" onclick="myFunctionDiv()">÷</button>
+            <button id = "seven" onclick="myFunction7()">7</button>
+            <button id = "eight" onclick="myFunction8()">8</button>
+            <button id = "nine" onclick="myFunction9()">9</button>
+            <button id = "four" onclick="myFunction4()">4</button>
+            <button id = "five" onclick="myFunction5()">5</button>
+            <button id = "six" onclick="myFunction6()">6</button>
+            <button id = "one" onclick="myFunction1()">1</button>
+            <button id = "two" onclick="myFunction2()">2</button>
+            <button id = "three" onclick="myFunction3()">3</button>
+            <button id = "zero" onclick="myFunction0()">0</button>
+            <button data-action="decimal" onclick="decimal()">.</button>
+            <button data-action="clear" onclick="myFunctionAC()">AC</button>
+            <button class="key--equal" onclick="myFunctionEq()">=</button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
